@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickSign</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Satisfy&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Satisfy&display=swap');
+        </style>
+    <link href="style.css" rel="stylesheet">
+    <link href="/image/favicon-32x32.png" rel="icon">
+</head>
+
+<body>
+    <header>
+        <div class="logo">QuickSign</div>
+        <nav>
+            <ul>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/index.html">Draw Signature</a></li>
+                <li><a href="/login.html" class="login">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Draw Signature</h1>
+        <div class="bigcontainer">
+            <div class="top">
+
+                <div class="block">
+                    <p>Text Color Picker</p>
+                    <input class="form-control" type="color" id="colorPicker">
+                </div>
+
+                <div class="block">
+                    <p>Background Color</p>
+                    <input class="form-control" type="color" id="canvaColor">
+                </div>
+
+                <div class="block">
+                    <p>Font Size</p>
+                    <select class="form-control" id="fontPicker">
+                        <option value="5">5px</option>
+                        <option value="10">10px</option>
+                        <option value="20">20px</option>
+                        <option value="30">30px</option>
+                        <option value="40">40px</option>
+                        <option value="50">50px</option>
+                    </select>
+                </div>
+            </div>
+
+            <canvas class="canvas" id="myCanvas" width="600" height="350"></canvas>
+
+            <div class="bottom">
+                <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+                <button type="button" class="btn btn-success" id="saveButton">Save and Download</button>
+                <button type="button" class="btn btn-warning" id="retrieveButton">Retrieve saved Signature</button>
+            </div>
+            </div>
+        </div>
+    </main>
+    <script  src="script.js"></script>
+</body>
+</html>
